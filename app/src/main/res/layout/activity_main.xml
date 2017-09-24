@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    tools:context="com.example.shivani.seekbar.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seekbar with no Custom Layout"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+    <TextView
+        android:id="@+id/progressValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"/>
+  
+        <SeekBar android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_margin="10dp"
+            style="@style/Widget.AppCompat.SeekBar" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seekbar with Custom Thumb Layout"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/progressValue2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <SeekBar android:id="@+id/seekbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:thumb="@drawable/seekbar_thumb"
+            android:layout_margin="10dp"
+            style="@style/Widget.AppCompat.SeekBar" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seekbar with Custom Thumb and ProgressBar Layout"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/progressValue3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <SeekBar android:id="@+id/seekbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:progressDrawable="@drawable/seekbar_background"
+            android:thumb="@drawable/seekbar_thumb"
+            android:layout_margin="10dp"
+            style="@style/Widget.AppCompat.SeekBar" />
+    </LinearLayout>
+</LinearLayout>
